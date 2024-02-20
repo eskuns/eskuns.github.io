@@ -1,0 +1,265 @@
+body {
+    font-family: Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../../image/fondnoir.jpg);
+    background-size: cover;
+
+  }
+
+  /* HAMBURGER */
+
+  .hamburger div {
+    bottom: 10vh;
+    position: relative;
+    left: 48vw;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+  }
+
+#un {
+  top: 1.6vh;
+  position: absolute;
+  right: 1.1vw;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  z-index: 999;
+}
+
+#deux {
+  top: 2.75vh;
+  position: absolute;
+  right: 1.1vw;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  z-index: 999;
+}
+
+#trois {
+  top: 3.9vh;
+  position: absolute;
+  right: 1.1vw;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  z-index: 999;
+}
+  
+#nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 1s;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0;
+}
+
+#nav a {
+  color: #ffffff;
+  font-family: 'Verdana', sans-serif;
+  text-decoration: none;
+  line-height: 70vw;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-indent: 50vw;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+#nav a:hover {
+  background: rgba(255, 255, 255, 0.5); 
+  background-image: linear-gradient(rgba(0, 0, 0,0.4),rgba(255, 255, 255,0.4));
+} 
+
+ul {
+  list-style: none;
+}
+
+.visible {
+  z-index: 100 !important;
+  opacity: 1 !important;
+}
+
+.shape-circle {
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  top: -10vw;
+  right: -10vw;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav.visible li:first-child {
+  width: 200vw;
+  height: 200vw;
+  top: -100vw;
+  right: -100vw;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 0px 80px rgba(255, 255, 255, 0.2);;
+}
+
+nav.visible li:nth-child(2) {
+  width: 150vw;
+  height: 150vw;
+  top: -75vw;
+  right: -75vw;
+  z-index: 2;
+  transition: all .6s ease-in-out;
+  box-shadow: 0 0px 80px rgba(255, 255, 255, 0.2);
+}
+
+nav.visible li:nth-child(3){
+  width: 100vw;
+  height: 100vw;
+  top: -50vw;
+  right: -50vw;
+  z-index: 3;
+  transition: all .7s ease-in-out;
+  box-shadow: 0 0px 80px rgba(255, 255, 255, 0.2);;
+}
+
+nav.visible li:last-child{
+  width: 50vw;
+  height: 50vw;
+  top: -25vw;
+  right: -25vw;
+  z-index: 4;
+  transition: all .8s ease-in-out;
+  box-shadow: 0 0px 80px rgba(255, 255, 255, 0.2);;
+}
+
+nav.visible li:first-child a {
+  line-height: 265vw !important;
+    text-indent: 15vw !important;
+
+}
+
+nav.visible li:nth-child(2) a {
+  line-height: 200vw !important;
+  text-indent:17vw !important;
+}
+
+nav.visible li:nth-child(3) a {
+  line-height: 137vw !important;
+    text-indent: 17vw !important;
+  
+}
+
+nav.visible li:last-child a {
+  line-height: 70vw !important;
+  text-indent:12vw !important;
+}
+
+
+/* HAMBURGER */
+
+/* NUAGE */
+
+  #wordCloud {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(30, 30, 30,0.5),rgba(90, 90, 90, 0.5),rgba(150, 150, 150,0.5),rgba(210, 210, 210, 0.5));
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5);
+  }
+
+
+  .mot {
+    list-style-type: none;
+    font-size: 300%;
+  }
+
+  .mot:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .mot:nth-child(2) {
+    transform: rotate(270deg);
+    position: absolute;
+    top: 47%;
+    left: 57%;
+  }
+  .mot:nth-child(3) {
+  position: absolute;
+  top: 45%;
+  left: 49%; 
+  }
+
+  .mot:nth-child(4) {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  }
+  .mot:nth-child(5) {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 52%;
+    left: 45%;
+  }
+  .mot:nth-child(6) {
+    position: absolute;
+    top: 55%;
+    left: 49%; 
+  }
+  .mot:nth-child(7) {
+  position: absolute;
+  top: 55%;
+  left: 61%; 
+  }
+
+  .mot:nth-child(8) {
+  transform: rotate(270deg);
+  position: absolute;
+  top: 51%;
+  left: 63%;
+  }
+  .mot:nth-child(9) {
+    transform: rotate(270deg);
+    position: absolute;
+    top: 43%;
+    left: 60%;
+  }
+  .mot:nth-child(10) {
+    position: absolute;
+    top: 41%;
+    left: 56%;
+  }
+  .mot:nth-child(11) {
+  position: absolute;
+  top: 55%;
+  left: 48%; 
+  }
+
+  .mot:nth-child(12) {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  }
+
+/* NUAGE  */

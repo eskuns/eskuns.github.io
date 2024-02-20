@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+#un {
+  top: 1.6vh;
+  position: absolute;
+  right: 1.1vw;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  z-index: 101;
+  transition: transform 0.3s ease-out;
+}
+
+#deux {
+  top: 2.75vh;
+  position: absolute;
+  right: 1.1vw;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  z-index: 101;
+  transition: transform 0.3s ease-out;
+}
+
+#trois {
+  top: 3.9vh;
+  position: absolute;
+  right: 1.1vw;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  z-index: 101;
+  transition: transform 0.3s ease-out;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+/* Navbar Links CSS */
+
+#nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 1s;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0;
+}
+
+#nav a {
+  color: #ffffff;
+  font-family: 'Verdana', sans-serif;
+  text-decoration: none;
+  line-height: 70vw;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-indent: 50vw;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+#nav a:hover {
+  background: rgba(255, 255, 255, 0.5); 
+  background-image: linear-gradient(rgba(0, 0, 0,0.4),rgba(255, 255, 255,0.4));
+} 
+
+ul {
+  list-style: none;
+}
+
+.visible {
+  z-index: 100 !important;
+  opacity: 1 !important;
+}
+
+.shape-circle {
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  top: -10vw;
+  right: -10vw;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav.visible li:first-child {
+  width: 200vw;
+  height: 200vw;
+  top: -100vw;
+  right: -100vw;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 0px 80px rgba(255, 255, 255, 0.2);;
+}
+
+nav.visible li:nth-child(2) {
+  width: 150vw;
+  height: 150vw;
+  top: -75vw;
+  right: -75vw;
+  z-index: 2;
+  transition: all .6s ease-in-out;
+  box-shadow: 0 0px 80px rgba(255, 255, 255, 0.2);
+}
+
+nav.visible li:nth-child(3){
+  width: 100vw;
+  height: 100vw;
+  top: -50vw;
+  right: -50vw;
+  z-index: 3;
+  transition: all .7s ease-in-out;
+  box-shadow: 0 0px 80px rgba(255, 255, 255, 0.2);;
+}
+
+nav.visible li:last-child{
+  width: 50vw;
+  height: 50vw;
+  top: -25vw;
+  right: -25vw;
+  z-index: 4;
+  transition: all .8s ease-in-out;
+  box-shadow: 0 0px 80px rgba(255, 255, 255, 0.2);;
+}
+
+nav.visible li:first-child a {
+  line-height: 265vw !important;
+    text-indent: 15vw !important;
+
+}
+
+nav.visible li:nth-child(2) a {
+  line-height: 200vw !important;
+  text-indent:17vw !important;
+}
+
+nav.visible li:nth-child(3) a {
+  line-height: 137vw !important;
+    text-indent: 17vw !important;
+  
+}
+
+nav.visible li:last-child a {
+  line-height: 70vw !important;
+  text-indent:12vw !important;
+}
+
+
+/* Main Body CSS */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  width: 200px;
+  height: 300px;
+  list-style-type: none;
+  position: absolute;
+  top: 55%;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(255,255,255,0.3) inset;
+  transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+
+  &:nth-child(1), &:nth-child(2) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  &:nth-child(3) { left: 60%; }
+  &:nth-child(4) { left: calc(60% + 220px); }
+  &:nth-child(5) { left: calc(60% + 440px); }
+  &:nth-child(6) { left: calc(60% + 660px); opacity: 0; }
+}
+
+.content {
+  width: min(30vw,400px);
+  position: absolute;
+  top: 20%;
+  left: 3rem;
+  color: white;
+  text-shadow: 0 3px 8px rgb(0, 0, 0,0.4);
+  display: none;
+  font-family: 'Verdana', sans-serif;
+
+  & .title {
+    text-transform: uppercase;
+  }
+
+  & .description {
+    line-height: 1.7;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  & button {
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+
+.item:nth-of-type(2) .content {
+  display: block;
+  animation: show 0.75s ease-in-out 0.3s forwards;
+}
+
+@keyframes show {
+  0% {
+    filter: blur(5px);
+    transform: translateY(calc(-50% + 75px));
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  user-select: none;
+
+  & .btn {
+    background-color: rgba(255, 255, 255,0.8);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(0, 0 ,0, 0.5);
+    margin: 0 0.25rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.5);
+    }
+  }
+}
+
+@media (width > 650px) and (width < 900px) {
+  .content {
+    & .title        { font-size: 1rem; }
+    & .description  { font-size: 0.7rem; }
+    & button        { font-size: 0.7rem; }
+  }
+  .item {
+    width: 160px;
+    height: 270px;
+
+    &:nth-child(3) { left: 60%; }
+    &:nth-child(4) { left: calc(60% + 170px); }
+    &:nth-child(5) { left: calc(60% + 340px); }
+    &:nth-child(6) { left: calc(60% + 510px); opacity: 0; }
+  }
+}
+
+@media (width < 650px) {
+  .content {
+    & .title        { font-size: 0.9rem; }
+    & .description  { font-size: 0.65rem; }
+    & button        { font-size: 0.7rem; }
+  }
+  .item {
+    width: 130px;
+    height: 220px;
+
+    &:nth-child(3) { left: 60%; }
+    &:nth-child(4) { left: calc(60% + 140px); }
+    &:nth-child(5) { left: calc(60% + 280px); }
+    &:nth-child(6) { left: calc(60% + 420px); opacity: 0; }
+  }
+}
