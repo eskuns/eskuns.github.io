@@ -13,4 +13,3 @@ function barClicked() {
   nav[0].classList.toggle('menu-open');
 }
 
-

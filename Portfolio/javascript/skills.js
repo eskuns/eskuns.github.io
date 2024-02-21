@@ -30,28 +30,22 @@ function getRandomColor() {
   });
 
 
-// Setting up the Variables
-var bars = document.getElementById("nav-action");
-var nav = document.getElementById("nav");
 
+
+
+
+// Setting up the Variables
+var bars = document.getElementsByClassName("menu-btn");
+var nav = document.getElementsByClassName("menu");
+
+console.log(bars);
 
 //setting up the listener
-bars.addEventListener("click", barClicked, false);
+bars[0].addEventListener("click", barClicked, false);
 
 //setting up the clicked Effect
 function barClicked() {
-  bars.classList.toggle('active');
-  nav.classList.toggle('visible');
+  bars[0].classList.toggle('open');
+  nav[0].classList.toggle('menu-open');
 }
 
-
-const slider = document.querySelector('.slider');
-
-function activate(e) {
-  const items = document.querySelectorAll('.item');
-  e.target.matches('.next') && slider.append(items[0])
-  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
-}
-
-document.addEventListener('click',activate,false);
-  
