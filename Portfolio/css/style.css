@@ -34,7 +34,7 @@ body {
   overflow: hidden;
   display: grid;
   width: 100%;
-  font-family: "Verdana", sans-serif;
+  font-family: "Helvetica", Arial, sans-serif;
   place-items: center;
 }
 
@@ -103,7 +103,7 @@ body {
 
 .menu a {
   color: #ffffff;
-  font-family: 'Verdana', sans-serif;
+  font-family: "Helvetica", Arial, sans-serif;
   text-decoration: none;
   line-height: 70vw;
   position: absolute;
