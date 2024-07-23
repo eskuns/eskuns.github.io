@@ -1,20 +1,13 @@
-/* HAMBURGER */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*:focus,
-*:active {
-  outline: none !important;
-  -webkit-tap-highlight-color: transparent;
-}
 
 a{
   text-decoration: none;
 }
-
 
 html {
   height: 100vh;
@@ -23,7 +16,7 @@ html {
 
 body {
   position: relative;
-  background: url('../image/fondnoir.jpg') no-repeat center center fixed;
+  background: url('../image/background.jpg');
   background-size: cover;
   min-width: 500px;
   min-height: 200px;
@@ -48,43 +41,12 @@ body {
 }
 
 
-.btn-line {
+.btn-ligne {
   width: 100%;
   height: 3px;
   background-color: #ffffff;
   margin: 5px 0;
   transition: all 0.3s ease;
-}
-
-.menu {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  position: absolute;
-}
-
-
-
-.menu::before {
-  transform: translateY(-9px);
-}
-
-.menu::after {
-  transform: translateY(9px);
-}
-
-.menu-btn.open .bar {
-  background-color: transparent;
-}
-
-.menu-btn.open span::before {
-  animation: top-bar 1s;
-  animation-fill-mode: forwards;
-}
-
-.menu-btn.open span::after {
-  animation: bottom-bar 1s;
-  animation-fill-mode: forwards;
 }
 
 .menu {
@@ -94,10 +56,10 @@ body {
   left: 0;
   right: 0;
   transition: all 1s;
-  z-index: -1;
-  overflow: hidden;
   opacity: 0;
 }
+
+
 
 .menu a {
   color: #ffffff;
@@ -112,10 +74,11 @@ body {
   text-indent: 50vw;
   border-radius: 50%;
   transition: all .5s;
+  overflow: hidden;
+  z-index:-1;
 }
 
 .menu a:hover {
-  /* background: rgba(255, 255, 255, 0.5); */
   background-image: linear-gradient(rgba(0, 0, 0,0.4),rgba(255, 255, 255,0.4));
 }
 
@@ -129,7 +92,7 @@ ul {
   background-color: transparent;
 }
 
-.shape-circle {
+.cercle {
   border-radius: 50%;
   width: 20vw;
   height: 20vw;
@@ -203,80 +166,62 @@ ul {
   text-indent:12vw !important;
 }
 
-/* HAMBURGER */
+/* NAVBAR + BACKGROUND ^^^^^^^^ */
 
-/* Main Body CSS */
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
 
 h1 {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   text-transform: uppercase;
-  font-size: 120px;
-  letter-spacing:5px;
-  padding-top: 30vh;                      
+  font-size: 90px;
+  letter-spacing:6px;                  
+}
+
+.center-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 
-article p {
-  padding-bottom: 15px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 350px;
+  text-align: center;
 }
 
-article a {
-  color: #fff;
-  text-decoration: none;
-  opacity: .2;
-  font-size: 12px;
+.card img {
+  width: 100%;
+  height: auto;
 }
 
-article a:hover {
-  opacity: .8;
+.card .container {
+  font-size: 20px;
+  padding: 20px;
 }
 
-@keyframes top-bar {
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: rotate(45deg) translateY(0);
-  }
+.card .container h4 {
+  margin: 10px 0;
+  color: #333;
 }
 
-@keyframes bottom-bar {
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: rotate(-45deg) translateY(0);
-  }
+.card .container p {
+  color: #666;
 }
-
-
-@media screen and (max-width:800px) {
-
-  h1 {
-    padding-top:80px;
-    font-size: 60px;
-  }
-}
-
-
-/* Contact */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 
 
 .wrapper {
   display: inline-flex;
   position: relative;
   list-style: none;
+  padding-top: 5vh;  
 }
 
 .wrapper .icon {
@@ -347,26 +292,4 @@ article a:hover {
 .wrapper .github:hover .tooltip::before {
   background: rgba(23,21,22,255);
   color: #ffffff;
-}
-
-.wrapper .twitch:hover,
-.wrapper .twitch:hover .tooltip,
-.wrapper .twitch:hover .tooltip::before {
-  background: rgba(169,67,255,255);
-  color: #ffffff;
-}
-
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background: rgba(255,9,99,255);
-  color: #ffffff;
-}
-
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-  background: rgba(254,0,0,255);
-  color: #ffffff;
-  z-index:10;
 }

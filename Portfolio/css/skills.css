@@ -1,27 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-
-body {
-    font-family: "Helvetica", Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image: url(../image/fondnoir.jpg);
-    background-size: cover;
-
-  }
-
-/* HAMBURGER */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+a{
+  text-decoration: none;
+}
+
 html {
   height: 100vh;
   width: 100vw;
+}
+
+body {
+  position: relative;
+  background: url('../image/background.jpg');
+  background-size: cover;
+  min-width: 500px;
+  min-height: 200px;
+  color: #fff;
+  height:100%;
+  overflow: hidden;
+  display: grid;
+  width: 100%;
+  font-family: "Helvetica", Arial, sans-serif;
+  place-items: center;
 }
 
 .menu-btn {
@@ -35,41 +40,13 @@ html {
   z-index:999;
 }
 
-.btn-line {
+
+.btn-ligne {
   width: 100%;
   height: 3px;
   background-color: #ffffff;
   margin: 5px 0;
   transition: all 0.3s ease;
-}
-
-.menu {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  position: absolute;
-}
-
-.menu::before {
-  transform: translateY(-9px);
-}
-
-.menu::after {
-  transform: translateY(9px);
-}
-
-.menu-btn.open .bar {
-  background-color: transparent;
-}
-
-.menu-btn.open span::before {
-  animation: top-bar 1s;
-  animation-fill-mode: forwards;
-}
-
-.menu-btn.open span::after {
-  animation: bottom-bar 1s;
-  animation-fill-mode: forwards;
 }
 
 .menu {
@@ -79,10 +56,10 @@ html {
   left: 0;
   right: 0;
   transition: all 1s;
-  z-index: -1;
-  overflow: hidden;
   opacity: 0;
 }
+
+
 
 .menu a {
   color: #ffffff;
@@ -97,6 +74,8 @@ html {
   text-indent: 50vw;
   border-radius: 50%;
   transition: all .5s;
+  overflow: hidden;
+  z-index:-1;
 }
 
 .menu a:hover {
@@ -113,7 +92,7 @@ ul {
   background-color: transparent;
 }
 
-.shape-circle {
+.cercle {
   border-radius: 50%;
   width: 20vw;
   height: 20vw;
@@ -187,7 +166,8 @@ ul {
   text-indent:12vw !important;
 }
 
-/* HAMBURGER */
+/* NAVBAR + BACKGROUND ^^^^^^^^ */
+
 section {
     width: 100%;
     display: flex;

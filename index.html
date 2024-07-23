@@ -1,63 +1,56 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8"> 
-  <title>Accueil</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="./image/logow.png">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Bitter'><link rel="stylesheet" href="./Portfolio/css/style.css">
+  <!DOCTYPE html>
+  <html lang="en" >
+  <head>
+    <meta charset="UTF-8"> 
+    <title>Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./image/logow.png">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Bitter'><link rel="stylesheet" href="./Portfolio/css/style.css">
 
-</head>
-<body>
-  
-  <div class="menu-btn">
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-  </div>
+  </head>
+  <body>
+    
+    <div class="menu-btn">
+      <div class="btn-ligne"></div>
+      <div class="btn-ligne"></div>
+      <div class="btn-ligne"></div>
+    </div>
+    
+    <div class="menu">
+      <ul class ="menu-items">
+        <li class="cercle"> <a href="./Portfolio/html/veille">À Propos De Moi</a> </li>
+        <li class="cercle"> <a href="./Portfolio/html/projets">Projets</a> </li>
+        <li class="cercle"> <a href="./Portfolio/html/skills">Compétences</a> </li>
+        <li class="cercle"> <a href="./index">Accueil</a> </li>
+      </ul>
+    </div>
+
+    <h1>Mon Portfolio</h1>
+
+      <div class="center-container">
+
+        <div class="card">
+          <img src="./Portfolio/image/photo.jpg" alt="Photo">
+          <div class="container">
+            <h4><b>Marques Enzo</b></h4>
+            <p>Développeur Web</p>
+          </div>
+        </div>
 
 
-  <nav class="menu">
-    <ul class ="menu-items">
-      <li class="shape-circle circle-one"> <a href="./Portfolio/html/veille.html">Veille Informatique</a> </li>
-      <li class="shape-circle circle-two"> <a href="./Portfolio/html/projets.html">Mes Projets</a> </li>
-      <li class="shape-circle circle-three"> <a href="./Portfolio/html/skills.html">Mes Compétences</a> </li>
-      <li class="shape-circle circle-four"> <a href="./index.html">Accueil</a> </li>
+    <ul class="wrapper">
+      <li class="icon linkedin" onclick="window.location.href='https://www.linkedin.com/in/enzo-marques-web';">
+        <span class="tooltip">LinkedIn</span>
+        <span><i class="fab fa-linkedin"></i></span>
+      </li>
+      <li class="icon github" onclick="window.location.href='https://github.com/eskuns';">
+        <span class="tooltip">Github</span>
+        <span><i class="fab fa-github"></i></span>
+      </li>
     </ul>
-  </nav>
 
+    <script  src="./Portfolio/javascript/script.js"> </script>
 
-
-  <article class="container">
-    <h1>BIENVENUE</h1>
-  </article>
-
-
-  <ul class="wrapper">
-    <li class="icon linkedin" onclick="window.location.href='https://www.linkedin.com/in/enzo-marques-04b856240/';">
-      <span class="tooltip">LinkedIn</span>
-      <span><i class="fab fa-linkedin"></i></span>
-    </li>
-    <li class="icon github" onclick="window.location.href='https://github.com/eskuns';">
-      <span class="tooltip">Github</span>
-      <span><i class="fab fa-github"></i></span>
-    </li>
-    <li class="icon twitch" onclick="window.location.href='https://twitch.tv/eskuns';">
-      <span class="tooltip">Twitch</span>
-      <span><i class="fab fa-twitch"></i></span>
-    </li>
-    <li class="icon instagram" onclick="window.location.href='https://www.instagram.com/enzoomrqs';">
-      <span class="tooltip">Instagram</span>
-      <span><i class="fab fa-instagram"></i></span>
-    </li>
-    <li class="icon youtube" onclick="window.location.href='https://www.youtube.com/channel/UC_B3B1bin5LgOoqhTIvBAgg';">
-      <span class="tooltip">Youtube</span>
-      <span><i class="fab fa-youtube"></i></span>
-    </li>
-  </ul>
-
-  <script  src="./Portfolio/javascript/script.js"> </script>
-
-</body>
-</html>
+  </body>
+  </html>
